@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img9"
+    tools:context=".CakePage">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birthday Cakes"
+                    android:textColor="#000000"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"></TextView>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/cakemain"></ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="270dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Our Cake Sellers List:"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:padding="15dp">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/cakecard"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/cakeshop"
+                                android:src="@drawable/cakeshop"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="The Cake Shop"
+                                android:id="@+id/txtcakeshop"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/cakeshop"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btncakeshop"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="140dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/cakelk"
+                                android:src="@drawable/cakelk"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Cake.lk"
+                                android:id="@+id/txtcakelk"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/cakelk"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btncakelk"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/cakebyniro"
+                                android:src="@drawable/cakebyniro"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Cake by Niro"
+                                android:id="@+id/txtcakebyniro"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/cakebyniro"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btncakebyniro"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/sweet"
+                                android:src="@drawable/sweetcake"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Sweet Cakes"
+                                android:id="@+id/txtsweet"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/sweet"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnsweet"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/creativecakes"
+                                android:src="@drawable/creativecakes"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Creative Cakes"
+                                android:id="@+id/txtcreativecakes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/creativecakes"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btncreativecakes"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/divine"
+                                android:src="@drawable/divine"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Divine Cakes"
+                                android:id="@+id/txtdivine"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/divine"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btndivine"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

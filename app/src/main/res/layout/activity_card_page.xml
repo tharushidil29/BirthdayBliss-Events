@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img9"
+    tools:context=".CardPage">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Birthday Cards"
+                    android:textColor="#000000"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"></TextView>
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="165dp"
+                    android:src="@drawable/cardsmain"></ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="270dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Our Creators List:"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:padding="15dp">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/birthcard"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/elegance"
+                                android:src="@drawable/elegance"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Elegance"
+                                android:id="@+id/txtdjash"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/elegance"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnelegance"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="140dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/sricards"
+                                android:src="@drawable/sricards"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Sri Cards"
+                                android:id="@+id/txtsricards"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/sricards"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnsricards"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/perfect"
+                                android:src="@drawable/perfect"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Perfect Cards"
+                                android:id="@+id/txtperfect"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/perfect"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnperfect"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/ncreation"
+                                android:src="@drawable/ncreation"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="N Creation"
+                                android:id="@+id/txtncreation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ncreation"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btncreation"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

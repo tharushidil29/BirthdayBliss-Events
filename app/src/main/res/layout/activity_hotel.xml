@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img9"
+    tools:context=".Hotel">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotels"
+                    android:textColor="#000000"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:padding="15dp"></TextView>
+
+                <ImageView
+                    android:layout_width="344dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/hotelsmain"></ImageView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="270dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Our Hotels List:"
+                    android:textColor="#000000"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:padding="15dp">
+                </TextView>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/hotelcard"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/shangrila"
+                                android:src="@drawable/shangrila"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Shangri La"
+                                android:id="@+id/txtshangrila"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/shangrila"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnshangrila"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="140dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/taj"
+                                android:src="@drawable/taj1"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Taj"
+                                android:id="@+id/txttaj"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/taj"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btntaj"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/rui"
+                                android:src="@drawable/riu"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Hotel Rui"
+                                android:id="@+id/txtrui"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/rui"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnrui"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/themudhouse"
+                                android:src="@drawable/themudhouse"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="The Mud House"
+                                android:id="@+id/txtthemudhouse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/themudhouse"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnthemudhouse"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="150dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/legrand"
+                                android:src="@drawable/legrand"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Le Grand"
+                                android:id="@+id/txtlegrand"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/legrand"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnlegrand"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/laya"
+                                android:src="@drawable/laya"
+                                android:layout_centerInParent="true">
+                            </ImageView>
+
+                            <TextView
+                                android:text="Laya Safari"
+                                android:id="@+id/txtlaya"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/laya"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:textColor="#000">
+                            </TextView>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:id="@+id/btnlaya"
+                                android:background="@android:color/transparent">
+                            </Button>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

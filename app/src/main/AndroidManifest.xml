@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.proximity"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BirthdayPartyPlannerApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".AddInformationPage"
+            android:exported="false" />
+
+        <activity
+            android:name=".Ideas"
+            android:exported="false" />
+        <activity
+            android:name=".DesignCollective"
+            android:exported="false" />
+        <activity
+            android:name=".Indi"
+            android:exported="false" />
+        <activity
+            android:name=".SriCards"
+            android:exported="false" />
+        <activity
+            android:name=".Elegance"
+            android:exported="false" />
+        <activity
+            android:name=".DressPage"
+            android:exported="false" />
+        <activity
+            android:name=".CardPage"
+            android:exported="false" />
+        <activity
+            android:name=".DjAsh"
+            android:exported="false" />
+        <activity
+            android:name=".qpoint"
+            android:exported="false" />
+        <activity
+            android:name=".MusicPage"
+            android:exported="false" />
+        <activity
+            android:name=".CakeLk"
+            android:exported="false" />
+        <activity
+            android:name=".CakeShop"
+            android:exported="false" />
+        <activity
+            android:name=".CakePage"
+            android:exported="false" />
+        <activity
+            android:name=".Taj"
+            android:exported="false" />
+
+        <activity
+            android:name=".ShangriLa"
+            android:exported="false" />
+        <activity
+            android:name=".Hotel"
+            android:exported="false" />
+        <activity
+            android:name=".PartyCare"
+            android:exported="false" />
+        <activity
+            android:name=".PartyDecor"
+            android:exported="false" />
+        <activity
+            android:name=".DecorationPage"
+            android:exported="false" />
+        <activity
+            android:name=".SriDevi"
+            android:exported="false" />
+        <activity
+            android:name=".NickJones"
+            android:exported="false" />
+        <activity
+            android:name=".PhotographyPage"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".SettingPage"
+            android:exported="false" />
+        <activity
+            android:name=".LogoutPage"
+            android:exported="false" />
+        <activity
+            android:name=".ColorChangeSensor"
+            android:exported="false" />
+        <activity
+            android:name=".LocationPage"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardPage"
+            android:exported="false" />
+        <activity
+            android:name=".DatabaseHelper"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpPage"
+            android:exported="false" />
+        <activity
+            android:name=".LogInPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_api_key" />
+    </application>
+
+</manifest>
